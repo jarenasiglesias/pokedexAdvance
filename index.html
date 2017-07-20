@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PokeApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body class="container-fluid">
+	<div class="row row-head">
+		<div class="col-4">
+			<img src="image/head.png" id="headimg">
+		</div>
+		<div class="col-4 title">
+			<h1>POKÉDEX</h1>
+		</div>
+		<div class="col-4">
+			
+		</div>
+	</div>
+
+	<div class="container align-center">
+	<form class="">
+		<input type="text" class="textBox" id="searchPokemon" placeholder="Introduce a Pokemon ID">
+		<input type="submit" class="btn btn-primary" id="btn-pokemon" value="Search pokemon">
+		<select class="btn" name="pkmnType" id="searchType">
+        	<option value="" selected="selected">- Select type -</option>
+      		<option value="1">Normal</option>
+     	 	<option value="2">Fighting</option>
+      		<option value="3">Flying</option>
+      		<option value="4">Poison</option>
+			<option value="5">Ground</option>
+      		<option value="6">Rock</option>
+			<option value="7">Bug</option>
+      		<option value="8">Ghost</option>
+			<option value="9">Steel</option>
+      		<option value="10">Fire</option>
+			<option value="11">Water</option>
+      		<option value="12">Grass</option>
+			<option value="13">Electric</option>
+			<option value="14">Psychic</option>
+			<option value="15">Ice</option>
+			<option value="16">Dragon</option>
+			<option value="17">Dark</option>
+			<option value="18">Fairy</option>
+    	</select>
+		<input type="submit" class="btn btn-primary" id="btn-type" value="Search type">
+	</form>
+		<div class="row row-bg" hidden="">
+			<div class="col-4 empty nameCol">
+				<div class="pkmnName">
+					
+				</div>
+			</div>
+			<div class="col-4 empty typeCol">
+				<h3></h3>
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="col-4 empty descCol">
+				<h2 class="descTitle"></h2>
+				<p class="desc"></p>
+				
+			</div>
+		</div>
+
+	</div>
+
+
+	<!--links jquery & bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/pokemon.js"></script>
+</body>
+</html>
